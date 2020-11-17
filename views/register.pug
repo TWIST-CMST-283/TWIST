@@ -1,0 +1,103 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width')
+  link(href='style.css' rel='stylesheet' type='text/css')
+  title Twist
+  img#top(src='' alt='Teen Women In Science')
+div
+  h1 Registration
+  p Please fill out the fields below then press submit.
+  form(action='success.html' method='POST')
+    label(for='fname') First name:
+    br
+    input#fname(type='text' name='fname')
+    br
+    label(for='lname') Last name:
+    br
+    input#lname(type='text' name='lname')
+    br
+    label(for='email') Email:
+    br
+    input#email(type='text' name='email')
+    br
+    label(for='addr') Address:
+    br
+    input#addr(type='text' name='addr')
+    br
+    label(for='city') City:
+    br
+    input#city(type='text' name='city')
+    br
+    label(for='state') State:
+    br
+    input#state(type='text' name='state')
+    br
+    label(for='zip') Zip Code:
+    br
+    input#zip(type='text' name='zip')
+    br
+    label(for='hschool') Highschool:
+    br
+    input#hschool(type='text' name='hschool')
+    br
+    label(for='regtype') Type:
+    br
+    input(type='radio' name='regtype' value='student')
+    | Student
+    br
+    input(type='radio' name='regtype' value='parent')
+    | Parent
+    br
+    input(type='radio' name='regtype' value='educator')
+    | Educator
+    br
+    input(type='radio' name='regtype' value='sponsor')
+    | Sponsor
+    br
+    label(for='sinfo') Please Choose Up to Six Fields of Interest
+    br
+    input(type='checkbox' name='sinfo' value='chir')
+    | Chiropractic Care
+    br
+    input(type='checkbox' name='sinfo' value='dent')
+    | Dentistry
+    br
+    input(type='checkbox' name='sinfo' value='engi')
+    | Engineering
+    br
+    input(type='checkbox' name='sinfo' value='fina')
+    | Finance
+    br
+    input(type='checkbox' name='sinfo' value='grap')
+    | Graphic Design
+    br
+    input(type='checkbox' name='sinfo' value='arch')
+    | Interior Architecture
+    br
+    input(type='checkbox' name='sinfo' value='lawe')
+    | Law Enforcement
+    br
+    input(type='checkbox' name='sinfo' value='lega')
+    | Legal Services
+    br
+    input(type='checkbox' name='sinfo' value='nonp')
+    | Nonprofit Administration
+    br
+    input(type='checkbox' name='sinfo' value='pilo')
+    | Professional Pilot
+    br
+    input(type='checkbox' name='sinfo' value='real')
+    | Realty
+    br
+    input(type='checkbox' name='sinfo' value='ress')
+    | Research Scientist
+    br
+    input(type='checkbox' name='sinfo' value='zoov')
+    | Zoo Veterinarian Medicine
+    br
+    input#submit(type='submit' value='submit')
+footer
+  a(href='#top') HOME
+  p &amp;#169 Kansas State University
+  a(href='admin.html') Admin

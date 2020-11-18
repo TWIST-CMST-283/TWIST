@@ -8,7 +8,7 @@ head
 div
   h1 Registration
   p Please fill out the fields below then press submit.
-  form(action='success.html' method='POST')
+  form(action='/success' method='POST')
     label(for='fname') First name:
     br
     input#fname(type='text' name='fname')
@@ -99,5 +99,5 @@ div
     input#submit(type='submit' value='submit')
 footer
   a(href='#top') HOME
-  p &amp;#169 Kansas State University
-  a(href='admin.html') Admin
+  p &copy; Kansas State University
+  a(href='/admin') Admin

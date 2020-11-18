@@ -4,7 +4,7 @@
   "description": "This Github repository will contain all of the files necessary to build/run the TWIST website including both the database and the user interface.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app"
   },
   "repository": {
     "type": "git",

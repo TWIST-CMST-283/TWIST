@@ -4,6 +4,7 @@
   "description": "This Github repository will contain all of the files necessary to build/run the TWIST website including both the database and the user interface.",
   "main": "app.js",
   "scripts": {
+    "install": "npm install nodemon -g",
     "start": "node app"
   },
   "repository": {
@@ -21,7 +22,6 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "mongodb": "^3.6.3",
-    "nodemon": "^2.0.6",
     "pug": "^3.0.0"
   }
 }

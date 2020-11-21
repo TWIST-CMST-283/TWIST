@@ -1,34 +1,28 @@
 # TWIST Web Project
 
-## Update 11/18/2020
-
-If you have downloaded/cloned a branch onto your computer and want to work on the files locally, here are a few things to take note of:
-
-1. Make sure node.js is installed onto your computer
-2. Open a terminal/command prompt/powershell in the project folder
-3. Run 'npm install'
-
-This will install all dependencies for the project including express, pug, and a handy package called nodemon. After you install the dependencies, you can simply type 'nodemon' into whatever type of terminal window you have opened in the project folder and it will host the website on port 3000. Just type 'localhost:3000' into the search bar of your web browser and you will be able to see the rendered webpage. This also updates automatically as you make changes to the code. Whenever you would like to quit, simple press CTRL + C in the terminal window you have opened.  
-  
-If you have any questions, feel free to ask me.  
--Bailey Underwood
-
-## Original
-
 This Github repository will contain all of the files necessary to build/run the TWIST website including both the database and the user interface.
 
-The repository has a few different branches for building and testing:
-
-- main
-- database
-- website
-
-Feel free to add more branches to the repository as you see fit. For example, if you need a branch to test a new feature or design but don't want to mess with code in a given branch, you can easily add a branch off of another then create a pull request when done to bring it back to the original branch.
-
 **DO NOT DIRECTLY COMMIT TO MAIN**  
-This can cause problems with code that has been verified to work. The main branch is for the final product and should be *mostly* bug free.  
-The code changes will only be brought into main once it is verified to work with or rather doesn't break the code already in the main branch.  
-Any changes you make to the database must first be put into the database branch, any changes you make to the HTML must be put into the website branch, etc.  
-And again, feel free to add branches to test out code on your own so you don't have to worry about other people's changes messing something up.
+This can cause problems with code that has been verified to work. Instead, you can create a branch off of the main to add or test new code. Once done, you can create a pull request and pull it back into the main branch.
+
+## Running the Project Locally
+
+I would highly recommend downloading or cloning the files to your computer to work on with the code editor Visual Studio Code(VS Code).  
+
+Here is what you will need to do:
+
+- Install node.js
+- Install git (not GitHub)
+- Install Visual Studio Code (not Visual Studio)
+- Download files from GitHub or sign into GitHub using VS Code to clone the files
+
+After you have these downloaded and installed, you will need to open up VS Code and make sure that you have the project folder open and that it detects that you are working on a GitHub project (bottom bar will turn from purple to blue and you will see a branch icon).  
+  
+If you would like to test the website as you code you will need to install the dependencies which is pretty simple.
+
+1. Click on 'Terminal' tab in VS Code and click 'New Terminal'
+2. In the terminal window/pane type 'npm install'
+
+Now whenever you want to test out the project, simply type 'nodemon' into the terminal window. You can view the website by putting 'localhost:3000' into your web browsers address bar. To quit nodemon simply press 'CTRL + C while' in the terminal.
 
 This README file will be replaced with an overview of the project when we submit the final build.

@@ -39,9 +39,11 @@ app.listen(3000, () => {
 const MongoClient = require('mongodb').MongoClient;
 const uri = 'mongodb+srv://TWIST:<password>@cluster0.jfxqx.mongodb.net/<dbname>?retryWrites=true&w=majority'; //Database String
 
-// BUG FIX REMINDER!!!!! 
-// userNewUrlParser is actually useNewUrlParser 
-const client = new MongoClient(uri, { userNewUrlParser: true });
+const client = new MongoClient(uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+
 client.connect(err => {
   const collection = client.db("crmdb").collection("customers");
   

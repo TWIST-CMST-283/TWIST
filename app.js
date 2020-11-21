@@ -33,30 +33,23 @@ app.listen(3000, () => {
     console.log('Port opened on 3000...');
 });
 
-
-
-
 //This should be a template we can use for all databases we need in the future
 //------------------------------------------------------------------------------------
 
-const MongoClient = require('mongodb').MongoClient
-const uri = //PUT DATABASE WE WANT TO USE HERE
+const MongoClient = require('mongodb').MongoClient;
+const uri = 'mongodb+srv://TWIST:<password>@cluster0.jfxqx.mongodb.net/<dbname>?retryWrites=true&w=majority'; //Database String
 
 // BUG FIX REMINDER!!!!! 
 // userNewUrlParser is actually useNewUrlParser 
-const client = new MongoClient(uri, { userNewUrlParser: true })
+const client = new MongoClient(uri, { userNewUrlParser: true });
 client.connect(err => {
-  const collection = client.db("crmdb").collection("customers")
+  const collection = client.db("crmdb").collection("customers");
   
-  client.close()
-})
-const bodyparser = require('body-parser') 
-const http = require('http').Server(app)
+  client.close();
+});
+const bodyparser = require('body-parser');
+const http = require('http').Server(app);
 
 //Middlware Setup
-app.use(bodyparser.json())
-app.use(bodyparser.urlencoded({ extended: true}))
-
-
-
-
+app.use(bodyparser.json());
+app.use(bodyparser.urlencoded({ extended: true}));

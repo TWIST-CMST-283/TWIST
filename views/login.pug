@@ -4,14 +4,15 @@ head
   meta(name='viewport' content='width=device-width')
   link(href='style.css' rel='stylesheet' type='text/css')
   title Administrator
-  a(href='/index') Back
+body
+  a(href='/') Back
   img#top(src='' alt='Teen Women In Science')
-h1 Administration Login
-.login
-  form
-    input#name(placeholder='Username' type='text')
-    input#pass(placeholder='Password' type='password')
-    input#submit(type='submit' value='Log in')
-footer
-  a(href='/index') HOME
-  p &copy; Kansas State University
+  h1 Administration Login
+  .login
+    form
+      input#name(placeholder='Username' type='text')
+      input#pass(placeholder='Password' type='password')
+      input#submit(type='submit' value='Log in')
+  footer
+    a(href='/') HOME
+    p &copy; Kansas State University

@@ -23,7 +23,12 @@ app.get('/success', (req, res) => {
     res.render('success');
 });
 
-// Admin Route
+// Admin Login Route
+app.get('/login', (req, res) => {
+    res.render('login');
+});
+
+// This route is for testing purposes only and should be removed before production. The admin page should only be accessible through a successful login.
 app.get('/admin', (req, res) => {
     res.render('admin');
 });
@@ -37,7 +42,7 @@ app.listen(3000, () => {
 //------------------------------------------------------------------------------------
 
 const MongoClient = require('mongodb').MongoClient;
-const uri = 'mongodb+srv://TWIST:<password>@cluster0.jfxqx.mongodb.net/<dbname>?retryWrites=true&w=majority'; //Database String
+const uri = 'mongodb+srv://TWIST:TWIST@cluster0.jfxqx.mongodb.net/TWIST?retryWrites=true&w=majority'; //Database String
 
 const client = new MongoClient(uri, {
     useNewUrlParser: true,
@@ -45,7 +50,7 @@ const client = new MongoClient(uri, {
 });
 
 client.connect(err => {
-  const collection = client.db("crmdb").collection("customers");
+  const collection = client.db("TWIST").collection("collection");
   
   client.close();
 });

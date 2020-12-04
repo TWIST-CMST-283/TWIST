@@ -8,6 +8,7 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+// Routes - Note that several routes are subject to change as they should not be accessible until certain actions are performed
 // Homepage Route
 app.get('/', (req, res) => {
     res.render('index');
@@ -18,7 +19,7 @@ app.get('/register', (req, res) => {
     res.render('register');
 });
 
-// Success Route
+// Successful Registration Route - This route will need to be made only accessible after registration form is filled out
 app.get('/success', (req, res) => {
     res.render('success');
 });

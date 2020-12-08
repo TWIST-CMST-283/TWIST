@@ -1,0 +1,38 @@
+extends head
+block title
+  title TWIST - Admin
+block content
+  .container-fluid.banner
+    a.text-light.float-left(href='/admin') &larr; Back
+    img#top(src='twist_logo.png' alt='Teen Women In Science')
+  .container
+    h2.py-3 Administration Panel
+    fieldset
+      legend Edit Session
+      form(action='/edit' method='GET')
+        input(type="hidden" name="session" id="session" placeholder="Session ID" required)
+        input(type="hidden" name="room" placeholder="Room Number" required)
+        input(type="hidden" name="topic" placeholder="Topic" required)
+        input(type="hidden" name="speaker" placeholder="Speaker" required)
+        .form-group
+          label(for='session')
+          input(type="text" name="session" id="session" placeholder="Session ID" required)
+        .form-group
+          label(for='session')
+          input(type="text" name="room" placeholder="Room Number" required)
+        .form-group
+          label(for='session')
+          input(type="text" name="topic" placeholder="Topic" required)
+        .form-group
+          label(for='session')
+          input(type="text" name="speaker" placeholder="Speaker" required)
+        button.btn.btn-success.mr-3(formaction="/update") Update
+        button.btn.btn-danger(formaction="/delete") Delete
+
+
+  footer
+    a(href='/') HOME
+    p &copy; Kansas State University
+
+  script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
+  script(src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous")

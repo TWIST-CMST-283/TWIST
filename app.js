@@ -35,9 +35,8 @@ app.get('/admin', (req, res) => {
 });
 
 // Debug
-app.listen(3000, () => {
-    console.log('Port opened on 3000...');
-});
+app.listen(process.env.PORT || 3000, 
+	() => console.log("Server is running..."));
 
 //This should be a template we can use for all databases we need in the future
 //------------------------------------------------------------------------------------

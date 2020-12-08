@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-const bodyParser = require('body-parser');
 
 // Init Web App
 const app = express();
@@ -44,9 +43,8 @@ app.get('/edit', (req, res) => {
 });
 
 // Open port 3000
-app.listen(3000, () => {
-    console.log('Port opened on 3000...');
-});
+app.listen(process.env.PORT || 3000, 
+	() => console.log("Server is running..."));
 
 //This should be a template we can use for all databases we need in the future
 //------------------------------------------------------------------------------------
